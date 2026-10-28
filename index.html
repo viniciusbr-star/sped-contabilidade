@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPED Contabilidade | Contabilidade, Departamento Pessoal e Abertura de Empresas</title>
+  <title>SPED Contabilidade | Abertura de Empresas, Escrita Fiscal, DP e Imposto de Renda</title>
   <meta name="description"
-    content="SPED Contabilidade: departamento pessoal, consultoria tributária e abertura de empresas com atendimento direto pelo WhatsApp.">
+    content="SPED Contabilidade: abertura de empresas, escrita fiscal, departamento pessoal, imposto de renda, regularização de obras e planejamento tributário em Osvaldo Cruz/SP, com atendimento direto pelo WhatsApp.">
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
@@ -73,12 +73,70 @@
 
 <body>
 
+  <!-- Ícones reutilizados no site inteiro (<use href="#i-...">) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.13c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.35c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.22-8.1 8.22zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.12-.56.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z" />
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+        d="M5 12h14M13 6l6 6-6 6" />
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"
+        d="M5 3.5h3.2l1.6 4.2-2 1.3a11 11 0 0 0 5.2 5.2l1.3-2 4.2 1.6V17a2.5 2.5 0 0 1-2.5 2.5C10 19.5 4.5 14 4.5 7A2.5 2.5 0 0 1 5 3.5Z" />
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m4 7 8 6 8-6" />
+      </g>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" />
+        <circle cx="12" cy="9.5" r="2.5" />
+      </g>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7v5l3.2 2" />
+      </g>
+    </symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" />
+      </g>
+    </symbol>
+    <symbol id="i-external" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"
+        d="M14 4h6v6M20 4l-9 9M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10" />
+    </symbol>
+  </svg>
+
+  <!-- BARRA DE CONTATO NO TOPO -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-group">
+        <a href="#" data-whatsapp-btn><svg class="ico"><use href="#i-wa" /></svg>(18) 99108-0880</a>
+        <a href="tel:+551835284320"><svg class="ico"><use href="#i-phone" /></svg>(18) 3528-4320</a>
+        <a href="mailto:escritoriosped@gmail.com" class="topbar-hide-sm"><svg class="ico"><use href="#i-mail" /></svg>escritoriosped@gmail.com</a>
+      </div>
+      <div class="topbar-group topbar-hide-md">
+        <span><svg class="ico"><use href="#i-pin" /></svg>Rua Ricardo Ponciano, 701 – Osvaldo Cruz/SP</span>
+        <span><svg class="ico"><use href="#i-clock" /></svg>Seg a Sex, 7:30h às 17:30h</span>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a href="#topo" class="logo">
-        <span class="logo-badge">
-          <img src="assets/img/logo-mark-real.png" alt="" class="logo-icon">
-        </span>
+        <img src="assets/img/logo-mark-real.png" alt="" class="logo-icon">
         <span class="logo-text-group">
           <span class="logo-title">SPED</span>
           <span class="logo-subtitle">Escritório de Contabilidade</span>
@@ -86,23 +144,25 @@
       </a>
 
       <nav class="main-nav" id="main-nav">
-        <a href="#servicos">Serviços</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#galeria">Nosso espaço</a>
+        <div class="nav-dropdown">
+          <a href="#servicos" class="nav-dropdown-toggle">Serviços <span class="caret" aria-hidden="true">▾</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="#servico-abertura">Abertura de Empresas</a>
+            <a href="#servico-fiscal">Escrita Fiscal</a>
+            <a href="#servico-dp">Departamento Pessoal</a>
+            <a href="#servico-ir">Declaração de Imposto de Renda</a>
+            <a href="obras.html">Regularização de Obras</a>
+            <a href="#servico-tributario">Planejamento Tributário</a>
+          </div>
+        </div>
+        <a href="obras.html" class="nav-highlight">Regularização de Obras</a>
+        <a href="#sobre">A SPED</a>
         <a href="#depoimentos">Depoimentos</a>
-        <a href="#dicas">Dicas</a>
-        <a href="#contato">Contato</a>
+        <a href="#radar">Radar Fiscal</a>
+        <a href="#consultas">Consultas</a>
       </nav>
 
-      <a href="#" class="btn btn-whatsapp btn-header" data-whatsapp-btn
-        data-message="Olá! Vim pelo site e gostaria de falar com a SPED Contabilidade.">
-        <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path
-            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.13c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.35c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.22-8.1 8.22zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.12-.56.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z" />
-        </svg>
-        <span>WhatsApp</span>
-      </a>
+      <a href="#contato" class="btn btn-primary btn-sm btn-header">Fale conosco</a>
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -116,22 +176,17 @@
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <span class="eyebrow">Contabilidade para o seu negócio</span>
-        <h1>Cuidamos da parte fiscal e trabalhista, você cuida de crescer.</h1>
+        <h1>Contabilidade que cuida<br><span class="accent">do seu negócio</span></h1>
         <p class="hero-sub">
-          Departamento pessoal, consultoria tributária e abertura de empresas com atendimento
-          direto, humano e sem burocracia. Fale agora com um especialista pelo WhatsApp.
+          Cuidamos da parte fiscal, tributária e trabalhista da sua empresa para que você
+          foque no que realmente importa: crescer.
         </p>
         <div class="hero-actions">
-          <a href="#" class="btn btn-whatsapp btn-lg" data-whatsapp-btn
-            data-message="Olá! Vim pelo site e gostaria de saber mais sobre os serviços da SPED Contabilidade.">
-            <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path
-                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.13c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.35c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.22-8.1 8.22zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.12-.56.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z" />
-            </svg>
-            <span>Falar no WhatsApp agora</span>
+          <a href="#" class="btn btn-primary btn-lg" data-whatsapp-btn
+            data-message="Olá! Vim pelo site e gostaria de falar com um especialista da SPED Contabilidade.">
+            <span>Fale com um especialista</span>
+            <span class="btn-arrow"><svg><use href="#i-arrow" /></svg></span>
           </a>
-          <a href="#servicos" class="btn btn-ghost btn-lg">Ver serviços</a>
         </div>
       </div>
     </section>
@@ -139,69 +194,269 @@
     <!-- SERVIÇOS -->
     <section class="servicos" id="servicos">
       <div class="container">
-        <span class="section-tag">O que fazemos</span>
-        <h2>Serviços</h2>
-        <p class="section-sub">Soluções contábeis pensadas para tirar peso das suas costas.</p>
+        <div class="section-head">
+          <span class="section-tag">Nossos serviços</span>
+          <h2>O que podemos fazer<br><span class="accent">pela sua empresa?</span></h2>
+        </div>
 
         <div class="cards-grid">
 
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-                <circle cx="9" cy="8" r="3.2" />
-                <path d="M3.5 19.5c0-3 2.5-5.2 5.5-5.2s5.5 2.2 5.5 5.2" />
-                <circle cx="17" cy="8.5" r="2.4" />
-                <path d="M15.5 14.6c2.4.4 4 2.4 4 4.9" />
-              </svg>
+          <article class="card" id="servico-abertura">
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M4 20.5h16" />
+                  <path d="M6 20.5V9l6-4.5 6 4.5v11.5" />
+                  <path d="M10 20.5v-5h4v5" />
+                </svg>
+              </div>
+              <h3>Abertura de Empresas</h3>
             </div>
-            <h3>Departamento Pessoal</h3>
-            <p>Folha de pagamento, admissões, rescisões, férias e eSocial em dia — sem dor de cabeça com prazos e
-              obrigações trabalhistas.</p>
-            <a href="#" class="card-link" data-whatsapp-btn
-              data-message="Olá! Quero saber mais sobre o serviço de Departamento Pessoal.">Falar sobre este serviço
-              →</a>
+            <ul class="card-list">
+              <li>Do CNPJ ao alvará, sem burocracia</li>
+              <li>Escolha da natureza jurídica e das atividades (CNAE)</li>
+              <li>Inscrições municipal e estadual</li>
+              <li>Migração de MEI para ME</li>
+            </ul>
           </article>
 
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-                <path
-                  d="M4 19.5V6.5a1.5 1.5 0 0 1 1.5-1.5H15l5 5v9.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5Z" />
-                <path d="M14.5 5v4.5H19" />
-                <path d="M8 13.5h8M8 16.5h5" />
-              </svg>
+          <article class="card" id="servico-fiscal">
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path
+                    d="M4 19.5V6.5a1.5 1.5 0 0 1 1.5-1.5H15l5 5v9.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5Z" />
+                  <path d="M14.5 5v4.5H19" />
+                  <path d="M8 13.5h8M8 16.5h5" />
+                </svg>
+              </div>
+              <h3>Escrita Fiscal</h3>
             </div>
-            <h3>Consultoria Tributária</h3>
-            <p>Planejamento e enquadramento tributário para pagar menos imposto dentro da lei, com segurança e sem
-              surpresas.</p>
-            <a href="#" class="card-link" data-whatsapp-btn
-              data-message="Olá! Quero saber mais sobre Consultoria Tributária.">Falar sobre este serviço →</a>
+            <ul class="card-list">
+              <li>Apuração de impostos (DAS, ICMS, ISS, PIS/COFINS)</li>
+              <li>Escrituração de notas de entrada e saída</li>
+              <li>Entrega de declarações e obrigações acessórias</li>
+              <li>Controle do calendário fiscal</li>
+            </ul>
           </article>
 
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-                <path d="M4 20.5h16" />
-                <path d="M6 20.5V9l6-4.5 6 4.5v11.5" />
-                <path d="M10 20.5v-5h4v5" />
-              </svg>
+          <article class="card" id="servico-dp">
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <circle cx="9" cy="8" r="3.2" />
+                  <path d="M3.5 19.5c0-3 2.5-5.2 5.5-5.2s5.5 2.2 5.5 5.2" />
+                  <circle cx="17" cy="8.5" r="2.4" />
+                  <path d="M15.5 14.6c2.4.4 4 2.4 4 4.9" />
+                </svg>
+              </div>
+              <h3>Departamento Pessoal</h3>
             </div>
-            <h3>Abertura de Empresas</h3>
-            <p>Do CNPJ ao alvará: cuidamos de toda a legalização para você abrir sua empresa rápido e sem burocracia.
-            </p>
-            <a href="#" class="card-link" data-whatsapp-btn
-              data-message="Olá! Quero saber mais sobre Abertura de Empresas.">Falar sobre este serviço →</a>
+            <ul class="card-list">
+              <li>Folha de pagamento e pró-labore</li>
+              <li>Admissões, férias e rescisões</li>
+              <li>eSocial e FGTS Digital em dia</li>
+              <li>Orientação sobre obrigações trabalhistas</li>
+            </ul>
+          </article>
+
+          <article class="card" id="servico-ir">
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <rect x="5" y="3.5" width="14" height="17" rx="1.5" />
+                  <path d="M8.5 8h7M8.5 11.5h7M8.5 15h4" />
+                </svg>
+              </div>
+              <h3>Declaração de Imposto de Renda</h3>
+            </div>
+            <ul class="card-list">
+              <li>Declaração anual de IR Pessoa Física</li>
+              <li>Retificação de declarações</li>
+              <li>Regularização de declarações em atraso</li>
+              <li>Orientação sobre restituição e malha fina</li>
+            </ul>
+          </article>
+
+          <article class="card card-featured" id="servico-obras">
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M3 20.5h18" />
+                  <path d="M5 20.5v-6h6v6M13 20.5V9h6v11.5" />
+                  <path d="M4 10.5 12 4l8 5" />
+                </svg>
+              </div>
+              <h3>Regularização de Obras</h3>
+            </div>
+            <ul class="card-list">
+              <li>Cadastro da obra no CNO</li>
+              <li>Cálculo e regularização do INSS da obra</li>
+              <li>Emissão da CND para averbação no cartório</li>
+              <li>Atendimento a pessoas físicas e empresas</li>
+            </ul>
+            <a href="obras.html" class="card-more">Saiba mais sobre regularização de obras →</a>
+          </article>
+
+          <article class="card" id="servico-tributario">
+            <div class="card-top">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M14.8 9.2c-.5-1-1.6-1.6-2.8-1.6-1.6 0-2.8.9-2.8 2.2 0 3 5.6 1.6 5.6 4.5 0 1.3-1.2 2.2-2.8 2.2-1.3 0-2.4-.6-2.9-1.7M12 6v1.6M12 16.4V18" />
+                </svg>
+              </div>
+              <h3>Planejamento Tributário</h3>
+            </div>
+            <ul class="card-list">
+              <li>Pagar menos imposto dentro da lei</li>
+              <li>Escolha do melhor regime (MEI, Simples, Presumido, Real)</li>
+              <li>Revisão de enquadramento</li>
+              <li>Simulações antes de decisões importantes</li>
+            </ul>
+          </article>
+
+          <article class="card card-cta">
+            <p class="card-cta-title">E muito mais para <span class="accent">o seu negócio</span></p>
+            <a href="#" class="btn btn-primary" data-whatsapp-btn
+              data-message="Olá! Gostaria de saber quais serviços a SPED Contabilidade pode oferecer para a minha empresa.">
+              <span>Fale com um especialista</span>
+              <span class="btn-arrow"><svg><use href="#i-arrow" /></svg></span>
+            </a>
           </article>
 
         </div>
       </div>
     </section>
 
+    <!-- DESTAQUE: REGULARIZAÇÃO DE OBRAS -->
+    <section class="obras-destaque">
+      <div class="container">
+        <a href="obras.html" class="obras-banner">
+          <div class="obras-banner-text">
+            <span class="obras-banner-tag">Especialidade SPED</span>
+            <h2>Construiu ou ampliou? <span>Regularize sua obra</span> e tire a CND sem complicação</h2>
+            <p>CNO, SERO, cálculo do INSS da obra e CND para averbar no cartório. Diagnóstico gratuito.</p>
+          </div>
+          <span class="btn btn-primary btn-lg">
+            <span>Saiba mais</span>
+            <span class="btn-arrow"><svg><use href="#i-arrow" /></svg></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- JORNADA -->
+    <section class="jornada">
+      <div class="container">
+        <h2>Facilitamos a sua jornada para se tornar <span class="accent">cliente SPED</span></h2>
+
+        <ol class="jornada-steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Conte rapidamente o que a sua empresa precisa.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>Receba uma proposta</h3>
+            <p>Montamos uma solução sob medida para o seu caso.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Tenha tranquilidade</h3>
+            <p>Sua parte fiscal e trabalhista em dia, com suporte contínuo.</p>
+          </li>
+        </ol>
+
+        <a href="#" class="btn btn-primary" data-whatsapp-btn
+          data-message="Olá! Quero ser cliente da SPED Contabilidade. Como funciona?">
+          <span>Quero ser cliente SPED</span>
+          <span class="btn-arrow"><svg><use href="#i-arrow" /></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SOBRE + MISSÃO, VISÃO E VALORES -->
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <div class="sobre-inner">
+          <div class="carrossel" id="carrossel">
+            <div class="carrossel-track" id="carrossel-track">
+              <div class="carrossel-slide">
+                <img src="assets/img/frente-escritorio.png" alt="Fachada do escritório SPED Contabilidade"
+                  loading="lazy">
+              </div>
+              <div class="carrossel-slide">
+                <img src="assets/img/banner-vertical.png" alt="Banner da SPED Contabilidade na recepção"
+                  loading="lazy">
+              </div>
+            </div>
+
+            <button class="carrossel-btn carrossel-prev" id="carrossel-prev" aria-label="Foto anterior">‹</button>
+            <button class="carrossel-btn carrossel-next" id="carrossel-next" aria-label="Próxima foto">›</button>
+
+            <div class="carrossel-dots" id="carrossel-dots">
+              <button class="carrossel-dot active" data-index="0" aria-label="Ir para foto 1"></button>
+              <button class="carrossel-dot" data-index="1" aria-label="Ir para foto 2"></button>
+            </div>
+          </div>
+
+          <div class="sobre-text">
+            <h2>Nosso negócio é <span class="accent">simplificar o seu</span></h2>
+            <p>
+              A SPED é um escritório de contabilidade em Osvaldo Cruz/SP focado em simplificar a rotina fiscal,
+              tributária e trabalhista de pequenas e médias empresas. Cuidamos dos números e das obrigações para que
+              você possa se dedicar ao que faz de melhor: tocar a sua empresa.
+            </p>
+            <p>
+              Nosso atendimento é direto, sem burocracia e sempre a um clique de distância no WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="essencia-title">Essa é a <span class="accent">nossa essência</span></h2>
+
+        <div class="essencia-grid">
+          <article class="essencia-card">
+            <h3>Missão</h3>
+            <p>Simplificar a rotina fiscal, tributária e trabalhista dos nossos clientes com atendimento próximo,
+              ágil e transparente, para que eles possam focar no crescimento do negócio.</p>
+          </article>
+          <article class="essencia-card">
+            <h3>Visão</h3>
+            <p>Ser referência em contabilidade na nossa região, reconhecida pela qualidade do atendimento e pela
+              confiança construída com cada cliente.</p>
+          </article>
+          <article class="essencia-card">
+            <h3>Valores</h3>
+            <p>Ética, transparência, compromisso com prazos, respeito ao cliente e atualização constante sobre a
+              legislação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA INTERMEDIÁRIO -->
+    <section class="cta-meio">
+      <div class="container">
+        <h2>Pronto para transformar<br><span class="accent">a sua gestão contábil?</span></h2>
+        <a href="#" class="btn btn-primary" data-whatsapp-btn
+          data-message="Olá! Quero organizar a contabilidade da minha empresa com a SPED.">
+          <span>Converse com a gente</span>
+          <span class="btn-arrow"><svg><use href="#i-arrow" /></svg></span>
+        </a>
+      </div>
+    </section>
+
     <!-- DIFERENCIAIS -->
     <section class="diferenciais" id="diferenciais">
       <div class="container">
-        <span class="section-tag section-tag-light">Por que a SPED</span>
-        <h2>Diferenciais</h2>
+        <div class="diferenciais-head">
+          <h2>Por que somos a <span class="accent">escolha ideal</span> para a sua empresa?</h2>
+          <p>Atendimento próximo, respostas rápidas e uma equipe que conhece a realidade de quem empreende.
+            Nosso foco é garantir que a sua empresa esteja sempre um passo à frente, com segurança e eficiência.</p>
+        </div>
 
         <div class="diff-grid">
           <div class="diff-item">
@@ -212,7 +467,7 @@
               </svg>
             </div>
             <h3>Atendimento direto</h3>
-            <p>Fale com quem cuida da sua conta, sem filas de espera ou robôs no atendimento.</p>
+            <p>Fale com quem cuida da sua conta, sem filas de espera nem robôs.</p>
           </div>
 
           <div class="diff-item">
@@ -223,7 +478,7 @@
               </svg>
             </div>
             <h3>Agilidade</h3>
-            <p>Respostas rápidas pelo WhatsApp, sem enrolação para resolver o que você precisa.</p>
+            <p>Respostas rápidas pelo WhatsApp, sem enrolação.</p>
           </div>
 
           <div class="diff-item">
@@ -233,8 +488,8 @@
                 <path d="M8 10V7a4 4 0 0 1 8 0v3" />
               </svg>
             </div>
-            <h3>Segurança e conformidade</h3>
-            <p>Sua empresa em dia com o Fisco e com a legislação trabalhista, sem riscos desnecessários.</p>
+            <h3>Segurança</h3>
+            <p>Sua empresa em dia com o Fisco e com a legislação trabalhista.</p>
           </div>
 
           <div class="diff-item">
@@ -244,94 +499,31 @@
                 <path d="M9 19v-6h6v6" />
               </svg>
             </div>
-            <h3>Atendimento personalizado</h3>
-            <p>Cada negócio é diferente — o suporte é ajustado à realidade e ao momento da sua empresa.</p>
+            <h3>Sob medida</h3>
+            <p>Suporte ajustado à realidade e ao momento do seu negócio.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SOBRE -->
-    <section class="sobre" id="sobre">
-      <div class="container">
-
-        <div class="sobre-inner">
-          <div class="sobre-text">
-            <span class="section-tag">Quem somos</span>
-            <h2>SPED Contabilidade</h2>
-            <p>
-              Somos um escritório de contabilidade focado em simplificar a rotina fiscal e trabalhista
-              de pequenas e médias empresas. Cuidamos do departamento pessoal, da parte tributária e da
-              abertura de negócios para que você possa focar no que faz de melhor: tocar a sua empresa.
-            </p>
-            <p>
-              Nosso atendimento é direto, sem burocracia e sempre a um clique de distância no WhatsApp.
-            </p>
-            <a href="#" class="btn btn-whatsapp" data-whatsapp-btn
-              data-message="Olá! Gostaria de conhecer melhor a SPED Contabilidade.">
-              <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.13c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.35c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.22-8.1 8.22zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.12-.56.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z" />
-              </svg>
-              <span>Conversar agora</span>
-            </a>
-          </div>
-
-          <div class="sobre-steps">
-            <div class="step">
-              <span class="step-num">1</span>
-              <div>
-                <h4>Chame no WhatsApp</h4>
-                <p>Conte rapidamente o que sua empresa precisa.</p>
-              </div>
-            </div>
-            <div class="step">
-              <span class="step-num">2</span>
-              <div>
-                <h4>Receba uma proposta</h4>
-                <p>Montamos uma solução sob medida para o seu caso.</p>
-              </div>
-            </div>
-            <div class="step">
-              <span class="step-num">3</span>
-              <div>
-                <h4>Tenha tranquilidade</h4>
-                <p>Sua parte contábil e trabalhista em dia, com suporte contínuo.</p>
-              </div>
-            </div>
-          </div>
+    <!-- EQUIPE -->
+    <section class="equipe" id="equipe">
+      <div class="container equipe-inner">
+        <div class="equipe-text">
+          <h2>Contamos com uma equipe preparada para atender você <span class="accent">com agilidade</span></h2>
+          <p>
+            Por trás de cada empresa atendida existe um time dedicado, que acompanha as mudanças da legislação
+            e cuida de cada detalhe da sua contabilidade. Conte com a gente no dia a dia e nas decisões
+            importantes do seu negócio.
+          </p>
+          <a href="#" class="btn btn-primary" data-whatsapp-btn
+            data-message="Olá! Gostaria de conversar com a equipe da SPED Contabilidade.">
+            <span>Fale com a nossa equipe</span>
+            <span class="btn-arrow"><svg><use href="#i-arrow" /></svg></span>
+          </a>
         </div>
-      </div>
-    </section>
-
-    <!-- GALERIA / CARROSSEL -->
-    <section class="galeria" id="galeria">
-      <div class="container">
-        <span class="section-tag">Nosso espaço</span>
-        <h2>Conheça o nosso escritório</h2>
-        <p class="section-sub">Um ambiente pensado para atender você com conforto e profissionalismo.</p>
-
-        <div class="carrossel" id="carrossel">
-          <div class="carrossel-track" id="carrossel-track">
-            <div class="carrossel-slide">
-              <img src="assets/img/frente-escritorio.png" alt="Fachada do escritório SPED Contabilidade" loading="lazy">
-            </div>
-            <div class="carrossel-slide">
-              <img src="assets/img/nosso-time.jpg" alt="Equipe da SPED Contabilidade" loading="lazy">
-            </div>
-            <div class="carrossel-slide">
-              <img src="assets/img/banner-vertical.png" alt="Recepção do escritório SPED Contabilidade" loading="lazy">
-            </div>
-          </div>
-
-          <button class="carrossel-btn carrossel-prev" id="carrossel-prev" aria-label="Foto anterior">‹</button>
-          <button class="carrossel-btn carrossel-next" id="carrossel-next" aria-label="Próxima foto">›</button>
-
-          <div class="carrossel-dots" id="carrossel-dots">
-            <button class="carrossel-dot active" data-index="0" aria-label="Ir para foto 1"></button>
-            <button class="carrossel-dot" data-index="1" aria-label="Ir para foto 2"></button>
-            <button class="carrossel-dot" data-index="2" aria-label="Ir para foto 3"></button>
-          </div>
+        <div class="equipe-photo">
+          <img src="assets/img/nosso-time.jpg" alt="Equipe da SPED Contabilidade" loading="lazy">
         </div>
       </div>
     </section>
@@ -339,114 +531,142 @@
     <!-- DEPOIMENTOS -->
     <section class="depoimentos" id="depoimentos">
       <div class="container">
-        <span class="section-tag">O que dizem nossos clientes</span>
-        <h2>Depoimentos</h2>
-        <p class="section-sub">Feedbacks reais de quem já é atendido pela SPED Contabilidade.</p>
+        <div class="section-head">
+          <span class="section-tag">O que dizem nossos clientes</span>
+          <h2>Quem confia na <span class="accent">SPED</span></h2>
+        </div>
 
         <div class="depoimentos-grid" id="depoimentos-grid">
           <p class="depoimentos-empty" id="depoimentos-empty">Ainda não há depoimentos publicados por aqui. Seja o
             primeiro a deixar o seu logo abaixo!</p>
         </div>
 
-        <button type="button" class="card-link depoimentos-ver-mais" id="depoimentos-ver-mais" hidden>Ver mais
+        <button type="button" class="link-more depoimentos-ver-mais" id="depoimentos-ver-mais" hidden>Ver mais
           depoimentos →</button>
 
         <div class="depoimento-form-box">
           <h3>Deixe seu depoimento</h3>
           <form id="depoimento-form" class="depoimento-form">
-            <div class="depoimento-field">
+            <div class="field">
               <label for="depoimento-nome">Seu nome</label>
               <input type="text" id="depoimento-nome" placeholder="Ex: Maria Silva" required>
             </div>
-            <div class="depoimento-field">
+            <div class="field">
               <label for="depoimento-texto">Conte como foi sua experiência</label>
               <textarea id="depoimento-texto" rows="4"
                 placeholder="Conte como foi sua experiência com a SPED Contabilidade..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-whatsapp btn-lg depoimento-btn">Enviar depoimento</button>
+            <button type="submit" class="btn btn-primary btn-block">Enviar depoimento</button>
           </form>
-          <p class="depoimento-form-status" id="depoimento-form-status" hidden>Obrigado! Seu depoimento foi enviado.
-          </p>
+          <p class="form-status" id="depoimento-form-status" hidden>Obrigado! Seu depoimento foi enviado.</p>
         </div>
       </div>
     </section>
 
-    <!-- DICAS RÁPIDAS / FAQ -->
-    <section class="dicas">
+    <!-- RADAR FISCAL (conteúdo vem de data/radar.json, atualizado por rotina diária) -->
+    <section class="radar" id="radar">
       <div class="container">
-        <span class="section-tag">Tire suas dúvidas</span>
-        <h2>Dicas Rápidas</h2>
-        <p class="section-sub">Respostas diretas para as dúvidas mais comuns sobre prazos fiscais, impostos e gestão
-          financeira.</p>
-
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary>Quais são os principais prazos fiscais que uma empresa não pode perder?<span
-                class="faq-icon">+</span></summary>
-            <p>O DAS do Simples Nacional vence todo dia 20, o FGTS até o dia 7 e a DCTFWeb e o eSocial têm prazos
-              mensais específicos. Perder essas datas gera multa e juros — por isso vale ter um contador acompanhando o
-              calendário fiscal da sua empresa.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Qual a diferença entre MEI, Simples Nacional, Lucro Presumido e Lucro Real?<span
-                class="faq-icon">+</span></summary>
-            <p>São regimes tributários com regras e limites de faturamento diferentes. O MEI é para quem fatura até R$
-              81 mil por ano; o Simples Nacional atende empresas de menor porte com alíquotas reduzidas; Lucro Presumido
-              e Lucro Real são indicados para empresas maiores. Escolher o enquadramento certo pode representar uma
-              economia real de impostos.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Como organizar o fluxo de caixa da minha empresa?<span class="faq-icon">+</span></summary>
-            <p>Separe as contas pessoais das da empresa, registre todas as entradas e saídas diariamente e projete os
-              próximos 30 a 60 dias. Isso evita surpresas no caixa e ajuda a planejar pagamentos e investimentos com
-              mais segurança.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>O que acontece se eu atrasar o pagamento do DAS ou de outro imposto?<span class="faq-icon">+</span>
-            </summary>
-            <p>Incidem multa de mora (que pode chegar a 20% do valor) e juros pela taxa Selic, além do risco de exclusão
-              do Simples Nacional em caso de atrasos recorrentes. Quanto antes regularizar, menor o valor final a pagar.
-            </p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Preciso de contador mesmo sendo MEI?<span class="faq-icon">+</span></summary>
-            <p>Não é obrigatório, mas é altamente recomendado. Um contador ajuda a evitar erros na Declaração Anual do
-              MEI (DASN-SIMEI), identifica o momento certo de migrar para outro regime e evita problemas com o Fisco.
-            </p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Quando devo entregar a Declaração de Imposto de Renda da minha empresa?<span
-                class="faq-icon">+</span></summary>
-            <p>A ECF (Escrituração Contábil Fiscal) geralmente é entregue até o último dia útil de julho do ano seguinte
-              ao ano-calendário. Empresas do Simples Nacional têm declarações próprias com prazos ao longo do ano — o
-              ideal é ter um contador cuidando desse calendário para você.</p>
-          </details>
+        <div class="section-head">
+          <span class="section-tag">Radar Fiscal</span>
+          <h2>Novidades fiscais <span class="accent">de cada dia</span></h2>
+          <p class="section-sub">Um resumo das principais mudanças em impostos, obrigações e legislação trabalhista,
+            com o link da fonte oficial. Atualizado todo dia útil.</p>
+          <p class="radar-updated" id="radar-updated" hidden></p>
         </div>
 
-        <a href="#" class="card-link" data-whatsapp-btn
-          data-message="Olá! Vi as dicas no site e gostaria de tirar uma dúvida sobre a minha empresa.">Ainda com
-          dúvidas? Fale com a gente →</a>
+        <div class="radar-filtros" id="radar-filtros" hidden></div>
+
+        <div class="radar-grid" id="radar-grid">
+          <p class="radar-empty" id="radar-empty">O Radar Fiscal está sendo preparado. Volte em breve para ver as
+            novidades do dia.</p>
+        </div>
+
+        <button type="button" class="link-more" id="radar-ver-mais" hidden>Ver mais novidades →</button>
+
+        <p class="radar-aviso">Resumos informativos feitos com apoio de inteligência artificial a partir de fontes
+          oficiais. Eles não substituem a orientação do seu contador: confira sempre a fonte e, em caso de dúvida,
+          <a href="#" data-whatsapp-btn data-message="Olá! Vi uma novidade no Radar Fiscal do site e queria tirar uma dúvida.">fale com a gente</a>.</p>
       </div>
     </section>
 
-    <!-- CTA FINAL -->
-    <section class="cta-final" id="contato">
-      <div class="container cta-final-inner">
-        <h2>Pronto para simplificar sua contabilidade?</h2>
-        <p>Fale agora mesmo com a SPED Contabilidade pelo WhatsApp e tire suas dúvidas sem compromisso.</p>
-        <a href="#" class="btn btn-whatsapp btn-lg" data-whatsapp-btn
-          data-message="Olá! Gostaria de falar com a SPED Contabilidade sobre meus serviços contábeis.">
-          <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path
-              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.13c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.35c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.22-8.1 8.22zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.12-.56.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z" />
-          </svg>
-          <span>Chamar no WhatsApp</span>
-        </a>
+    <!-- LINKS ÚTEIS E CONSULTAS -->
+    <section class="consultas" id="consultas">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Links úteis</span>
+          <h2>Consultas e <span class="accent">serviços online</span></h2>
+          <p class="section-sub">Atalhos para os sites oficiais que todo empresário acaba precisando.</p>
+        </div>
+
+        <div class="consultas-grid">
+          <div class="consultas-col">
+            <h3>Consultas</h3>
+            <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank" rel="noopener noreferrer">Consulta de CNPJ<svg class="ico"><use href="#i-external" /></svg></a>
+            <a href="https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/consultapublica.asp" target="_blank" rel="noopener noreferrer">Situação cadastral do CPF<svg class="ico"><use href="#i-external" /></svg></a>
+            <a href="https://consopt.www8.receita.fazenda.gov.br/consultaoptantes" target="_blank" rel="noopener noreferrer">Optantes pelo Simples Nacional<svg class="ico"><use href="#i-external" /></svg></a>
+            <a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda" target="_blank" rel="noopener noreferrer">Imposto de Renda e restituição<svg class="ico"><use href="#i-external" /></svg></a>
+            <a href="https://www.bcb.gov.br/controleinflacao/taxaselic" target="_blank" rel="noopener noreferrer">Taxa SELIC (Banco Central)<svg class="ico"><use href="#i-external" /></svg></a>
+          </div>
+
+          <div class="consultas-col">
+            <h3>Portais para empresas</h3>
+            <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/" target="_blank" rel="noopener noreferrer">Portal do Simples Nacional<svg class="ico"><use href="#i-external" /></svg></a>
+            <a href="https://www.gov.br/empresas-e-negocios/pt-br/empreendedor" target="_blank" rel="noopener noreferrer">Portal do Empreendedor (MEI)<svg class="ico"><use href="#i-external" /></svg></a>
+            <a href="https://cav.receita.fazenda.gov.br/autenticacao/login" target="_blank" rel="noopener noreferrer">e-CAC da Receita Federal<svg class="ico"><use href="#i-external" /></svg></a>
+            <a href="https://www.nfse.gov.br/EmissorNacional" target="_blank" rel="noopener noreferrer">Emissor Nacional de NFS-e<svg class="ico"><use href="#i-external" /></svg></a>
+          </div>
+
+          <div class="consultas-col">
+            <h3>Trabalhista</h3>
+            <a href="https://www.gov.br/esocial/pt-br" target="_blank" rel="noopener noreferrer">eSocial<svg class="ico"><use href="#i-external" /></svg></a>
+            <a href="https://fgtsdigital.sistema.gov.br/" target="_blank" rel="noopener noreferrer">FGTS Digital<svg class="ico"><use href="#i-external" /></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+      <div class="container">
+        <div class="contato-box">
+          <div class="contato-text">
+            <h2>Fale com a <span class="accent">SPED</span></h2>
+            <p>Conte um pouco sobre a sua empresa e a gente responde pelo WhatsApp com uma proposta
+              personalizada.</p>
+          </div>
+          <form class="contato-form" id="contato-form">
+            <div class="field">
+              <label for="contato-nome">Seu nome</label>
+              <input type="text" id="contato-nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="field">
+              <label for="contato-empresa">Empresa</label>
+              <input type="text" id="contato-empresa" placeholder="Nome da empresa (opcional)">
+            </div>
+            <div class="field">
+              <label for="contato-servico">Assunto</label>
+              <select id="contato-servico">
+                <option>Quero ser cliente</option>
+                <option>Abertura de empresa</option>
+                <option>Escrita Fiscal</option>
+                <option>Departamento Pessoal</option>
+                <option>Declaração de Imposto de Renda</option>
+                <option>Regularização de obra</option>
+                <option>Planejamento tributário</option>
+                <option>Outro assunto</option>
+              </select>
+            </div>
+            <div class="field field-full">
+              <label for="contato-mensagem">Mensagem</label>
+              <textarea id="contato-mensagem" rows="3" placeholder="Como podemos ajudar?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary field-full">
+              <svg class="icon-wa"><use href="#i-wa" /></svg>
+              <span>Enviar pelo WhatsApp</span>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -454,44 +674,55 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand logo">
-        <span class="logo-badge">
-          <img src="assets/img/logo-mark-real.png" alt="" class="logo-icon">
-        </span>
-        <span class="logo-text-group">
-          <span class="logo-title">SPED</span>
-          <span class="logo-subtitle">Escritório de Contabilidade</span>
-        </span>
+      <div class="footer-brand">
+        <a href="#topo" class="logo logo-light">
+          <span class="logo-badge"><img src="assets/img/logo-mark-real.png" alt="" class="logo-icon"></span>
+          <span class="logo-text-group">
+            <span class="logo-title">SPED</span>
+            <span class="logo-subtitle">Escritório de Contabilidade</span>
+          </span>
+        </a>
+        <p>Abertura de empresas, escrita fiscal, departamento pessoal, imposto de renda e regularização de obras com
+          atendimento direto e sem burocracia.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/sped.contabilidade/" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram"><svg><use href="#i-insta" /></svg></a>
+          <a href="#" data-whatsapp-btn aria-label="WhatsApp"><svg><use href="#i-wa" /></svg></a>
+        </div>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-col-title">Horário de atendimento</h4>
-        <p>Segunda a Sexta</p>
-        <p>7:30h às 17:30h</p>
+        <h4>Links</h4>
+        <a href="#topo">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="obras.html">Regularização de Obras</a>
+        <a href="#sobre">A SPED</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#radar">Radar Fiscal</a>
+        <a href="#consultas">Consultas</a>
+        <a href="#contato">Contato</a>
       </div>
 
-      <div class="footer-col">
-        <h4 class="footer-col-title">Contato</h4>
-        <p>WhatsApp: (18) 99108-0880</p>
-        <p>E-mail: <span data-placeholder>escritoriosped@gmail.com</span></p>
-        <p>Instagram: @sped.contabilidade</p>
+      <div class="footer-col footer-contacts">
+        <h4>Nossos contatos</h4>
+        <p><svg class="ico"><use href="#i-pin" /></svg>Rua Ricardo Ponciano, 701 – Osvaldo Cruz/SP</p>
+        <p><svg class="ico"><use href="#i-wa" /></svg>(18) 99108-0880 · (18) 3528-4320</p>
+        <p><svg class="ico"><use href="#i-phone" /></svg>(18) 99686-5743</p>
+        <p><svg class="ico"><use href="#i-mail" /></svg>escritoriosped@gmail.com</p>
+        <p><svg class="ico"><use href="#i-clock" /></svg>Segunda a sexta, 7:30h às 17:30h</p>
       </div>
+    </div>
 
-      <div class="footer-col">
-        <h4 class="footer-col-title">Localização</h4>
-        <p>Rua Ricardo Ponciano, 701 - Osvaldo Cruz</p>
-      </div>
-
-      <p class="footer-copy">© <span id="year"></span> SPED Contabilidade. Todos os direitos reservados.</p>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> SPED Contabilidade. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="https://www.instagram.com/viini7__/" target="_blank"
+          rel="noopener noreferrer">Vinicius Oliveira</a></p>
     </div>
   </footer>
 
   <a href="#" class="wa-float" data-whatsapp-btn data-message="Olá! Vim pelo site da SPED Contabilidade."
     aria-label="Falar no WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path
-        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.13c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.35c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.52-3.68 8.22-8.1 8.22zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.12-.56.12-.17.25-.65.8-.8.96-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.02-1.24-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.9 2.42 1.02 2.58.12.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z" />
-    </svg>
+    <svg><use href="#i-wa" /></svg>
   </a>
 
   <script src="js/script.js"></script>

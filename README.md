@@ -60,3 +60,21 @@ só apagar a linha correspondente na planilha de respostas — some do site na p
 - Formulário de contato simples (além do WhatsApp)
 - Depoimentos de clientes reais
 - Blog/conteúdo para SEO
+
+## Página de Regularização de Obras
+
+`obras.html` é uma página independente focada em regularização de obras (CNO, SERO, INSS de obra e CND).
+Usa o mesmo `css/style.css` do site, mais os estilos próprios em `css/obras.css`. O formulário de
+diagnóstico monta uma mensagem e abre o WhatsApp (código em `js/script.js`, seção "Diagnóstico de obra").
+
+## Radar Fiscal (atualização automática)
+
+A seção "Radar Fiscal" da página inicial lê o arquivo `data/radar.json`. Esse arquivo é atualizado todo
+dia útil por uma rotina agendada do Claude ("Radar Fiscal – Site", em https://claude.ai/code/routines),
+que pesquisa as novidades em fontes oficiais, reescreve o JSON e faz push na branch `main`. Como o site
+está hospedado ligado ao GitHub, cada push publica a versão nova automaticamente.
+
+- Se o arquivo estiver vazio, a seção mostra a mensagem "O Radar Fiscal está sendo preparado".
+- Abrindo o `index.html` direto do computador (duplo clique) o navegador bloqueia a leitura do JSON; para
+  ver o Radar localmente use o "Live Server" do VS Code.
+- Formato de cada item: `data` (AAAA-MM-DD), `area`, `titulo`, `resumo`, `quem_e_afetado`, `fonte`, `link`.

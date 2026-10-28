@@ -1,0 +1,359 @@
+/* ============ Página: Regularização de Obras ============
+   Usa os tokens e componentes de style.css; aqui ficam só as seções desta página. */
+
+.page-obras {
+  --ob-yellow: #ffb81c;
+  --ob-dark: #090a22;
+}
+
+.ob-highlight {
+  color: var(--ob-yellow);
+  background: linear-gradient(transparent 62%, rgba(255, 184, 28, 0.22) 62%);
+}
+
+.ob-badge {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 184, 28, 0.14);
+  border: 1px solid rgba(255, 184, 28, 0.4);
+  color: var(--ob-yellow);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.ob-checks { display: flex; flex-direction: column; gap: 10px; margin-bottom: 34px; }
+.ob-checks li { display: flex; align-items: center; gap: 10px; font-weight: 600; }
+.ob-checks svg {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--ob-yellow);
+  color: var(--ob-dark);
+}
+
+.ob-center { text-align: center; }
+.ob-tag-light { color: rgba(255, 255, 255, 0.6); }
+
+/* ============ Hero ============ */
+.ob-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0 120px;
+  background:
+    radial-gradient(55% 70% at 100% 0%, rgba(244, 123, 32, 0.22), transparent 70%),
+    radial-gradient(45% 60% at 0% 100%, rgba(46, 49, 146, 0.55), transparent 70%),
+    var(--ob-dark);
+  color: rgba(255, 255, 255, 0.82);
+}
+/* Grade de "planta baixa" ao fundo */
+.ob-hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(180deg, #000 30%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 30%, transparent 100%);
+}
+.ob-hero-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.ob-hero h1 {
+  color: var(--white);
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  line-height: 1.12;
+  margin-bottom: 22px;
+}
+.ob-hero-sub { font-size: 1.08rem; max-width: 600px; margin-bottom: 26px; }
+.ob-hero .ob-checks li { color: var(--white); }
+
+.ob-alert {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 4px solid var(--accent);
+  border-radius: 22px;
+  padding: 32px;
+  backdrop-filter: blur(6px);
+}
+.ob-alert-title { color: var(--white); font-size: 1.35rem; font-weight: 800; margin-bottom: 20px; }
+.ob-alert-title span { color: var(--accent); }
+.ob-alert ul { display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
+.ob-alert li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; }
+.ob-alert li svg {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  border-radius: 50%;
+  background: rgba(244, 123, 32, 0.18);
+  color: var(--accent);
+  margin-top: 1px;
+}
+.ob-alert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ob-yellow);
+  font-weight: 700;
+}
+.ob-alert-link:hover { text-decoration: underline; }
+
+/* ============ Faixa amarela ============ */
+.ob-strip {
+  padding: 26px 0;
+  background: var(--ob-yellow);
+  color: var(--ob-dark);
+}
+.ob-strip .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px 28px;
+}
+.ob-strip-title { font-weight: 800; }
+.ob-strip-items { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.ob-strip-items span {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--ob-dark);
+  color: var(--white);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* ============ Por que regularizar ============ */
+.ob-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.ob-compare-card {
+  border-radius: 22px;
+  padding: 32px;
+  border: 1px solid var(--line);
+}
+.ob-compare-label {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+.ob-compare-card ul { display: flex; flex-direction: column; gap: 14px; }
+.ob-compare-card li { display: flex; gap: 12px; align-items: flex-start; color: var(--ink); font-weight: 500; }
+.ob-compare-card li svg { flex-shrink: 0; width: 22px; height: 22px; padding: 4px; border-radius: 50%; margin-top: 1px; }
+
+.ob-compare-bad { background: #fff7f5; border-color: #f7d9d2; }
+.ob-compare-bad .ob-compare-label { background: #fde3dc; color: #c2410c; }
+.ob-compare-bad li svg { background: #fde3dc; color: #c2410c; }
+
+.ob-compare-good {
+  background: linear-gradient(150deg, var(--brand) 0%, var(--brand-900) 100%);
+  border-color: transparent;
+  box-shadow: 0 24px 50px rgba(46, 49, 146, 0.3);
+}
+.ob-compare-good .ob-compare-label { background: var(--ob-yellow); color: var(--ob-dark); }
+.ob-compare-good li { color: var(--white); }
+.ob-compare-good li svg { background: var(--ob-yellow); color: var(--ob-dark); }
+
+.ob-factors {
+  background: var(--soft);
+  border-radius: 22px;
+  padding: 36px;
+}
+.ob-factors h3 { text-align: center; font-size: 1.2rem; margin-bottom: 26px; }
+.ob-factors-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.ob-factors-grid div {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 20px;
+  border-left: 4px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ob-factors-grid strong { color: var(--ink); }
+.ob-factors-grid span { font-size: 0.9rem; color: var(--muted); }
+
+/* ============ Passo a passo ============ */
+.ob-passos {
+  margin: 0 16px;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(50% 60% at 100% 100%, rgba(244, 123, 32, 0.18), transparent 70%),
+    var(--ob-dark);
+}
+.ob-passos .section-head h2 { color: var(--white); }
+.ob-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+.ob-steps li {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 28px 24px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.ob-steps li:hover { transform: translateY(-4px); border-color: rgba(255, 184, 28, 0.5); }
+.ob-step-num {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--ob-yellow);
+  margin-bottom: 18px;
+}
+.ob-steps h3 { color: var(--white); font-size: 1.08rem; margin-bottom: 8px; }
+.ob-steps p { color: rgba(255, 255, 255, 0.68); font-size: 0.92rem; }
+
+/* ============ Documentos ============ */
+.ob-docs-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.ob-docs-text h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); margin-bottom: 16px; }
+.ob-docs-text p { color: var(--muted); margin-bottom: 28px; }
+.ob-docs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ob-docs-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+.ob-docs-list svg {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* ============ Diagnóstico ============ */
+.ob-diag { padding-top: 0; }
+.ob-diag-box {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 48px;
+  align-items: center;
+  padding: 52px;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(60% 80% at 0% 0%, rgba(255, 184, 28, 0.16), transparent 70%),
+    linear-gradient(150deg, var(--brand) 0%, var(--brand-950) 100%);
+  color: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 30px 60px rgba(21, 23, 61, 0.25);
+}
+.ob-diag-text h2 { color: var(--white); font-size: clamp(1.7rem, 3.4vw, 2.3rem); margin-bottom: 14px; }
+.ob-diag-text p { margin-bottom: 24px; }
+.ob-diag-text .ob-checks { margin-bottom: 0; }
+.ob-diag-text .ob-checks li { color: var(--white); }
+
+.ob-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 30px;
+}
+.ob-form .field-full { grid-column: 1 / -1; }
+
+/* ============ Quem somos ============ */
+.ob-sobre { background: var(--soft); }
+.ob-sobre-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.ob-sobre-photo img {
+  width: 100%;
+  border-radius: 22px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
+.ob-sobre h2 { font-size: clamp(1.6rem, 3.2vw, 2.1rem); margin-bottom: 16px; }
+.ob-sobre p { color: var(--muted); margin-bottom: 14px; }
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.link-arrow:hover { text-decoration: underline; }
+
+/* ============ CTA final ============ */
+.page-obras .dicas { background: var(--white); }
+.ob-cta {
+  text-align: center;
+  background:
+    radial-gradient(50% 80% at 50% 0%, rgba(244, 123, 32, 0.2), transparent 70%),
+    var(--ob-dark);
+  color: rgba(255, 255, 255, 0.78);
+}
+.ob-cta h2 { color: var(--white); font-size: clamp(1.8rem, 4vw, 2.7rem); max-width: 760px; margin: 0 auto 16px; }
+.ob-cta p { font-size: 1.05rem; margin-bottom: 32px; }
+.ob-cta .btn { padding-right: 28px; }
+
+/* ============ Responsivo ============ */
+@media (max-width: 960px) {
+  .ob-hero-inner,
+  .ob-compare,
+  .ob-docs-inner,
+  .ob-diag-box,
+  .ob-sobre-inner { grid-template-columns: 1fr; gap: 36px; }
+  .ob-steps,
+  .ob-factors-grid { grid-template-columns: repeat(2, 1fr); }
+  .ob-diag-box { padding: 36px 28px; }
+}
+
+@media (max-width: 640px) {
+  .ob-hero { padding: 72px 0 84px; }
+  .ob-alert { padding: 24px; }
+  .ob-steps,
+  .ob-factors-grid,
+  .ob-form { grid-template-columns: 1fr; }
+  .ob-passos { margin: 0 10px; border-radius: 22px; }
+  .ob-factors,
+  .ob-compare-card { padding: 24px; }
+  .ob-diag-box { padding: 28px 18px; }
+  .ob-form { padding: 22px 18px; }
+}

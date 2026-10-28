@@ -74,6 +74,58 @@ if (depoimentoForm) {
   });
 }
 
+// ============ Formulário "Fale com a SPED" (abre o WhatsApp com a mensagem montada) ============
+const contatoForm = document.getElementById("contato-form");
+
+if (contatoForm) {
+  contatoForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const nome = document.getElementById("contato-nome").value.trim();
+    const empresa = document.getElementById("contato-empresa").value.trim();
+    const assunto = document.getElementById("contato-servico").value;
+    const mensagem = document.getElementById("contato-mensagem").value.trim();
+    if (!nome) return;
+
+    const linhas = [
+      `Olá! Meu nome é ${nome}${empresa ? `, da empresa ${empresa}` : ""}.`,
+      `Assunto: ${assunto}`,
+    ];
+    if (mensagem) linhas.push(mensagem);
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(linhas.join("\n"))}`;
+    window.open(url, "_blank", "noopener");
+  });
+}
+
+// ============ Diagnóstico de obra (página obras.html) ============
+const obraForm = document.getElementById("obra-form");
+
+if (obraForm) {
+  obraForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const valor = (id) => document.getElementById(id).value.trim();
+    const nome = valor("obra-nome");
+    const cidade = valor("obra-cidade");
+    if (!nome || !cidade) return;
+
+    const area = valor("obra-area");
+    const linhas = [
+      `Olá! Meu nome é ${nome} e quero um diagnóstico para regularizar minha obra.`,
+      `Cidade: ${cidade}`,
+      `Tipo: ${valor("obra-tipo")}`,
+      `Categoria: ${valor("obra-categoria")}`,
+      area ? `Área construída: ${area} m²` : "Área construída: não sei",
+      `Situação: ${valor("obra-situacao")}`,
+      `Proprietário: ${valor("obra-proprietario")}`,
+    ];
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(linhas.join("\n"))}`;
+    window.open(url, "_blank", "noopener");
+  });
+}
+
 // ============ Depoimentos (buscados de uma planilha Google) ============
 const depoimentosGrid = document.getElementById("depoimentos-grid");
 
@@ -179,6 +231,118 @@ if (depoimentosGrid && DEPOIMENTOS_SHEET_CSV_URL) {
     })
     .catch(() => {
       // Mantém a mensagem padrão de "ainda não há depoimentos" em caso de erro.
+    });
+}
+
+// ============ Radar Fiscal (lê data/radar.json, atualizado por rotina diária) ============
+// Formato do arquivo: { "atualizado_em": "AAAA-MM-DD", "itens": [ { "data", "area", "titulo",
+// "resumo", "quem_e_afetado", "fonte", "link" } ] }, do mais recente para o mais antigo.
+const radarGrid = document.getElementById("radar-grid");
+
+if (radarGrid) {
+  const RADAR_VISIVEIS = 6;
+  const formatarData = (iso) => {
+    const [ano, mes, dia] = (iso || "").split("-");
+    return ano && mes && dia ? `${dia}/${mes}/${ano}` : "";
+  };
+
+  fetch(`data/radar.json?v=${new Date().toISOString().slice(0, 10)}`)
+    .then((res) => res.json())
+    .then((radar) => {
+      const itens = (radar.itens || []).filter((item) => item.titulo && item.link);
+      if (itens.length === 0) return;
+
+      const atualizadoEl = document.getElementById("radar-updated");
+      if (radar.atualizado_em) {
+        atualizadoEl.textContent = `Última atualização: ${formatarData(radar.atualizado_em)}`;
+        atualizadoEl.hidden = false;
+      }
+
+      const verMaisBtn = document.getElementById("radar-ver-mais");
+      const filtrosEl = document.getElementById("radar-filtros");
+      let areaAtual = "Todas";
+      let expandido = false;
+
+      const renderizar = () => {
+        const filtrados = areaAtual === "Todas" ? itens : itens.filter((item) => item.area === areaAtual);
+        radarGrid.innerHTML = "";
+
+        filtrados.forEach((item, indice) => {
+          const card = document.createElement("article");
+          card.className = "radar-card";
+          if (!expandido && indice >= RADAR_VISIVEIS) card.hidden = true;
+
+          const meta = document.createElement("div");
+          meta.className = "radar-meta";
+          const area = document.createElement("span");
+          area.className = "radar-area";
+          area.textContent = item.area || "Geral";
+          const data = document.createElement("span");
+          data.textContent = formatarData(item.data);
+          meta.append(area, data);
+
+          const titulo = document.createElement("h3");
+          titulo.textContent = item.titulo;
+
+          const resumo = document.createElement("p");
+          resumo.textContent = item.resumo || "";
+
+          card.append(meta, titulo, resumo);
+
+          if (item.quem_e_afetado) {
+            const afetados = document.createElement("p");
+            afetados.className = "radar-afetados";
+            afetados.textContent = `Quem é afetado: ${item.quem_e_afetado}`;
+            card.appendChild(afetados);
+          }
+
+          // Só aceita links http(s) vindos do arquivo, nunca javascript: ou similares.
+          if (/^https?:\/\//i.test(item.link)) {
+            const link = document.createElement("a");
+            link.className = "radar-link";
+            link.href = item.link;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = `Ver fonte oficial${item.fonte ? ` (${item.fonte})` : ""} →`;
+            card.appendChild(link);
+          }
+
+          radarGrid.appendChild(card);
+        });
+
+        verMaisBtn.hidden = filtrados.length <= RADAR_VISIVEIS;
+        verMaisBtn.textContent = expandido ? "Ver menos ↑" : "Ver mais novidades →";
+      };
+
+      const areas = ["Todas", ...new Set(itens.map((item) => item.area).filter(Boolean))];
+      if (areas.length > 2) {
+        areas.forEach((nome) => {
+          const botao = document.createElement("button");
+          botao.type = "button";
+          botao.className = "radar-filtro";
+          botao.textContent = nome;
+          botao.classList.toggle("active", nome === areaAtual);
+          botao.addEventListener("click", () => {
+            areaAtual = nome;
+            expandido = false;
+            filtrosEl.querySelectorAll(".radar-filtro").forEach((b) => b.classList.toggle("active", b === botao));
+            renderizar();
+          });
+          filtrosEl.appendChild(botao);
+        });
+        filtrosEl.hidden = false;
+      }
+
+      verMaisBtn.addEventListener("click", () => {
+        expandido = !expandido;
+        renderizar();
+        if (!expandido) radarGrid.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
+
+      renderizar();
+    })
+    .catch(() => {
+      // Mantém a mensagem padrão caso o arquivo não exista ou não possa ser lido.
     });
 }
 
