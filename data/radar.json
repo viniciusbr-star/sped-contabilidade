@@ -1,4 +1,23 @@
 {
-  "atualizado_em": "",
-  "itens": []
+  "atualizado_em": "2026-10-30",
+  "itens": [
+    {
+      "data": "2026-10-29",
+      "area": "Reforma Tributária",
+      "titulo": "Receita lembra: opção pelo regime regular do IBS e da CBS vai até 30/10 e não será prorrogada",
+      "resumo": "A Receita Federal informou que mais de 1 milhão de contribuintes já fizeram a opção pelo regime regular do IBS e da CBS e que o prazo termina em 30 de outubro de 2026, sem prorrogação. Quem fez a opção e quiser mudar de ideia pode cancelá-la até 20 de dezembro de 2026.",
+      "quem_e_afetado": "Empresas que ainda não definiram o regime do IBS e da CBS",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/outubro/mais-de-1-milhao-de-contribuintes-ja-optaram-pelo-regime-regular-do-ibs-e-da-cbs"
+    },
+    {
+      "data": "2026-10-29",
+      "area": "Reforma Tributária",
+      "titulo": "Cooperativas: Receita e CGIBS discutem prorrogar até 30/11 a opção pelo regime específico",
+      "resumo": "Receita Federal e Comitê Gestor do IBS discutem estender até 30 de novembro de 2026 o prazo de opção das cooperativas pelo regime específico da CBS e do IBS; a mudança ainda depende de formalização. A opção é feita no Portal de Serviços da Receita e só vale depois do envio da lista de associados com a data de admissão de cada um.",
+      "quem_e_afetado": "Sociedades cooperativas",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/outubro/receita-federal-e-cgibs-discutem-ampliacao-do-prazo-de-opcao-pelo-regime-especifico-da-cbs-e-do-ibs-para-as-cooperativas-ate-30-de-novembro"
+    }
+  ]
 }
