@@ -1,6 +1,24 @@
 {
-  "atualizado_em": "2026-11-03",
+  "atualizado_em": "2026-11-04",
   "itens": [
+    {
+      "data": "2026-11-03",
+      "area": "Federal",
+      "titulo": "Receita prorroga até 30/12/2026 a adesão aos Editais de Transação RFB nº 9 e nº 10",
+      "resumo": "Uma portaria da Receita Federal estendeu até 30 de dezembro de 2026 o prazo para aderir às modalidades de transação tributária dos Editais nº 9 e nº 10 de 2026. Elas valem para débitos em discussão administrativa, de pessoas físicas e jurídicas. As condições estão nos editais.",
+      "quem_e_afetado": "Pessoas físicas e empresas com débitos em contencioso administrativo",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-prorroga-prazo-para-adesao-a-editais-de-transacao-tributaria-ate-30-de-dezembro"
+    },
+    {
+      "data": "2026-11-03",
+      "area": "Federal",
+      "titulo": "IN RFB 2346/2026: autorregularização sem multa de mora para contribuintes com Selo Confia e Sintonia",
+      "resumo": "Quem tem Selo Confia ou Sintonia e recebeu uma Comunicação para Autorregularização pode corrigir pendências sem multa de mora, pagando o tributo e os juros. Há 60 dias para se manifestar, com confissão da dívida e pagamento à vista, parcelado ou por compensação. A Receita alerta que não cobra por WhatsApp, SMS ou e-mail.",
+      "quem_e_afetado": "Contribuintes com Selo Confia ou Sintonia",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/contribuintes-com-selo-confia-e-sintonia-podem-regularizar-pendencias-sem-multa-de-mora"
+    },
     {
       "data": "2026-10-29",
       "area": "Reforma Tributária",
