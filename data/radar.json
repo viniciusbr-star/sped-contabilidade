@@ -1,6 +1,15 @@
 {
-  "atualizado_em": "2026-11-05",
+  "atualizado_em": "2026-11-06",
   "itens": [
+    {
+      "data": "2026-11-04",
+      "area": "Federal",
+      "titulo": "Portaria PGFN/RFB 740/2026 detalha o perdão das dívidas do MEI vencidas até 13/10/2026",
+      "resumo": "A PGFN esclareceu as regras do perdão das contribuições mensais (DAS) do MEI vencidas até 13 de outubro de 2026, previsto na LC 238/2026. Não é preciso pedir nada: o cancelamento será automático a partir de 1º de janeiro de 2027, mas é necessário manter os pagamentos em dia. ICMS e ISS cobrados na mesma guia não estão incluídos.",
+      "quem_e_afetado": "Microempreendedores individuais (MEI)",
+      "fonte": "PGFN",
+      "link": "https://www.gov.br/pgfn/pt-br/assuntos/noticias/2026/pgfn-esclarece-regras-sobre-perdao-de-dividas-tributarias-para-meis"
+    },
     {
       "data": "2026-11-03",
       "area": "Federal",
