@@ -1,6 +1,15 @@
 {
-  "atualizado_em": "2026-11-09",
+  "atualizado_em": "2026-11-10",
   "itens": [
+    {
+      "data": "2026-11-09",
+      "area": "Federal",
+      "titulo": "Receita lança calculadora para comparar opções de transação tributária (Editais RFB 9 e 10 e PGFN 6)",
+      "resumo": "A Receita Federal liberou uma calculadora que simula as condições de quitação de dívidas por transação tributária, comparando inicialmente os Editais nº 9 e nº 10 de 2026 da Receita e o Edital nº 6 de 2026 da PGFN. A simulação é apenas orientativa e a ferramenta será atualizada conforme as regras mudarem.",
+      "quem_e_afetado": "Pessoas físicas, MEI e empresas com dívidas tributárias",
+      "fonte": "Ministério da Fazenda / Receita Federal",
+      "link": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/novembro/receita-federal-divulga-calculadora-para-apoiar-contribuintes-na-analise-de-opcoes-de-transacao-tributaria"
+    },
     {
       "data": "2026-11-04",
       "area": "Federal",
