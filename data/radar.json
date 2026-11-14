@@ -1,6 +1,24 @@
 {
-  "atualizado_em": "2026-11-13",
+  "atualizado_em": "2026-11-14",
   "itens": [
+    {
+      "data": "2026-11-13",
+      "area": "Reforma Tributária",
+      "titulo": "PGDAS-D é atualizado para a Reforma Tributária: fim da opção caixa/competência e folha de 12 meses",
+      "resumo": "Para os períodos de apuração 11/2026 e 12/2026, o PGDAS-D deixa de pedir a escolha entre regime de caixa e de competência, pois a partir de 2027 toda apuração será por competência. Também passa a ser obrigatório informar a folha de salários dos últimos 12 meses em cada atividade, dado que ajuda a definir as alíquotas de IBS e CBS nos documentos fiscais. Vale conferir os dados antes de transmitir a declaração.",
+      "quem_e_afetado": "Empresas do Simples Nacional",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/pgdas-d-e-atualizado-para-atender-a-reforma-tributaria-a-partir-de-novembro-de-2026"
+    },
+    {
+      "data": "2026-11-13",
+      "area": "Federal",
+      "titulo": "Opção pelo Simples Nacional 2027: resultado definitivo pode ser consultado a partir de 20/11",
+      "resumo": "A Receita informou que a opção pelo Simples Nacional para 2027 está em processamento final. Quem regularizou pendências nos últimos dias pode ver temporariamente a situação como indeferida, enquanto pagamentos e parcelamentos são processados. A partir de 20 de novembro de 2026, o resultado definitivo aparece no Portal do Simples Nacional, no serviço de acompanhamento da solicitação de opção.",
+      "quem_e_afetado": "Empresas que solicitaram a opção pelo Simples Nacional para 2027",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/processamento-final-das-solicitacoes-de-opcao-pelo-simples-nacional-para-2027"
+    },
     {
       "data": "2026-11-11",
       "area": "Reforma Tributária",
