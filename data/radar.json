@@ -1,6 +1,15 @@
 {
-  "atualizado_em": "2026-11-16",
+  "atualizado_em": "2026-11-17",
   "itens": [
+    {
+      "data": "2026-11-16",
+      "area": "Reforma Tributária",
+      "titulo": "Receita publica no GitHub o código da Calculadora de Tributos da CBS (Portaria Cotec 342/2026)",
+      "resumo": "A Receita Federal abriu ao público o código-fonte da Calculadora de Tributos, usada para calcular a CBS. Empresas e fornecedores de sistemas podem usar a mesma lógica de cálculo nos programas de emissão de notas e gestão. Quem usa software de terceiros pode perguntar ao fornecedor se ele já adotou a ferramenta.",
+      "quem_e_afetado": "Empresas e fornecedores de sistemas de gestão",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria"
+    },
     {
       "data": "2026-11-13",
       "area": "Reforma Tributária",
