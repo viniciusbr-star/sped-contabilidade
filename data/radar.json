@@ -1,6 +1,24 @@
 {
-  "atualizado_em": "2026-11-19",
+  "atualizado_em": "2026-11-20",
   "itens": [
+    {
+      "data": "2026-11-19",
+      "area": "Reforma Tributária",
+      "titulo": "Receita, CGIBS e CFC vão orientar contadores sobre destaque de CBS e IBS em notas",
+      "resumo": "A Receita identificou indícios de ausência ou destaque parcial de CBS e IBS em documentos fiscais de cerca de 72 mil empresas e vai orientar os contadores responsáveis. A ação é preventiva e a própria Receita afirma que isso não indica, por si só, irregularidade. Vale conferir com o contador se o sistema emissor de notas está configurado corretamente.",
+      "quem_e_afetado": "Empresas emissoras de notas fiscais eletrônicas e contadores",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-cgibs-e-cfc-vao-orientar-mais-de-25-mil-profissionais-da-contabilidade-sobre-destaque-de-cbs-ibs-em-documentos-fiscais"
+    },
+    {
+      "data": "2026-11-17",
+      "area": "Reforma Tributária",
+      "titulo": "Receita divulga documentação da API do RAD, para recolhimento de CBS como adquirente",
+      "resumo": "Foi publicada a documentação técnica da futura API que permitirá consultar recolhimentos de CBS feitos pelo comprador e gerar o DARF correspondente. A API ainda não está em funcionamento; ambientes de teste e cronograma serão informados depois. Interessa principalmente a fornecedores de sistemas.",
+      "quem_e_afetado": "Empresas e fornecedores de sistemas de gestão",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/virando-a-chave-para-a-reforma-tributaria-api-para-emissao-do-rad-ja-esta-disponivel"
+    },
     {
       "data": "2026-11-18",
       "area": "Reforma Tributária",
