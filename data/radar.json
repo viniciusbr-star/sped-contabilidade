@@ -1,6 +1,33 @@
 {
-  "atualizado_em": "2026-11-20",
+  "atualizado_em": "2026-11-21",
   "itens": [
+    {
+      "data": "2026-11-20",
+      "area": "Reforma Tributária",
+      "titulo": "Receita amplia acesso ao ambiente de testes (Piloto) da CBS para empresas de todo o país",
+      "resumo": "O acesso ao Piloto da CBS deixa de depender de indicação por entidades ou de pedido prévio e passa a valer para empresas que cumpram os requisitos operacionais da Receita. No Piloto é possível testar serviços sem gerar documentos com validade jurídica. Para usar, a empresa precisa dar procuração digital aos seus representantes no serviço correspondente.",
+      "quem_e_afetado": "Empresas e fornecedores de sistemas de gestão",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-amplia-acesso-ao-ambiente-de-producao-restrita-do-piloto-da-cbs"
+    },
+    {
+      "data": "2026-11-19",
+      "area": "Trabalhista",
+      "titulo": "Nota Orientativa FGTS Digital 13/2026: FGTS sobre o 13º nas rescisões fica mais simples",
+      "resumo": "O FGTS Digital passou a reconhecer automaticamente o recolhimento do FGTS sobre o 13º feito na rescisão, sem a rubrica extra na folha anual do eSocial exigida antes. Em alguns casos, como adiantamento maior que o proporcional ou valores declarados antecipadamente, ainda são necessários ajustes. A nota vale para rescisões de dezembro e janeiro.",
+      "quem_e_afetado": "Empregadores",
+      "fonte": "Ministério do Trabalho e Emprego",
+      "link": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/comunicados/nota-orientativa-simplifica-recolhimento-do-fgts-sobre-o-13o-salario-nas-rescisoes"
+    },
+    {
+      "data": "2026-11-17",
+      "area": "Trabalhista",
+      "titulo": "Nota Orientativa FGTS Digital 12/2026 esclarece recolhimento do FGTS em processos trabalhistas",
+      "resumo": "A nota atualiza as regras para recolher FGTS devido em condenações e acordos trabalhistas: desde 1º de maio de 2026 o recolhimento é feito pelo FGTS Digital, com declaração prévia no evento S-2500 do eSocial. Pagar o FGTS direto ao trabalhador não substitui o depósito na conta vinculada.",
+      "quem_e_afetado": "Empregadores com acordos ou condenações trabalhistas",
+      "fonte": "Ministério do Trabalho e Emprego",
+      "link": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/comunicados/nova-nota-orientativa-esclarece-recolhimento-do-fgts-em-processos-trabalhistas"
+    },
     {
       "data": "2026-11-19",
       "area": "Reforma Tributária",
