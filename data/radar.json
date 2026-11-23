@@ -1,6 +1,15 @@
 {
-  "atualizado_em": "2026-11-22",
+  "atualizado_em": "2026-11-23",
   "itens": [
+    {
+      "data": "2026-11-23",
+      "area": "Federal",
+      "titulo": "Receita abre consulta ao lote residual de restituição do IRPF 2026",
+      "resumo": "A consulta ao lote residual de restituições do Imposto de Renda 2026 foi liberada em 23 de novembro, com 223.793 restituições. O crédito bancário será feito em 30 de novembro, somente em conta do titular da declaração. A consulta é feita no portal da Receita, em Meu Imposto de Renda, ou no aplicativo.",
+      "quem_e_afetado": "Pessoas físicas com restituição pendente",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-abre-consulta-ao-lote-residual-de-restituicao-do-irpf-2026-nesta-segunda-feira-23"
+    },
     {
       "data": "2026-11-20",
       "area": "Reforma Tributária",
