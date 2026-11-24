@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spedcontabilidade.com.br/sitemap.xml

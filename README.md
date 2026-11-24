@@ -16,13 +16,31 @@ Basta abrir o arquivo `index.html` no navegador (duplo clique) ou usar a extens�
 3. **E-mail e endereço**: no rodapé de [index.html](index.html), troque `contato@spedcontabilidade.com.br` pelo e-mail real. Adicione endereço se quiser.
 4. **Textos**: os textos de "Sobre" e dos serviços são genéricos — ajuste com informações reais do escritório (tempo de atuação, diferenciais específicos, etc.) sempre que tiver dados concretos, para não passar informação falsa.
 
-## Como publicar (gratuito)
+## Como publicar e aparecer no Google
 
-Qualquer uma dessas opções funciona sem precisar de servidor, porque o site é 100% estático (HTML/CSS/JS):
+O site é 100% estático, então fica hospedado **de graça no GitHub Pages**, e cada atualização
+do Radar Fiscal publicada na `main` vai ao ar sozinha.
 
-- **Netlify**: arraste a pasta `sped-contabilidade` em https://app.netlify.com/drop
-- **Vercel**: `vercel` (CLI) dentro da pasta do projeto
-- **GitHub Pages**: suba a pasta para um repositório e ative Pages nas configurações
+1. **Registrar o domínio** `spedcontabilidade.com.br` em https://registro.br (cerca de R$ 40/ano).
+   Se registrar outro nome, troque `spedcontabilidade.com.br` em `index.html`, `obras.html`,
+   `robots.txt` e `sitemap.xml`.
+2. **Ativar o GitHub Pages**: no repositório, *Settings → Pages → Source: Deploy from a branch →
+   Branch: `main` / `(root)` → Save*. Em ~1 minuto o site fica em
+   `https://viniciusbr-star.github.io/sped-contabilidade/`.
+3. **Apontar o domínio** (no painel do registro.br, aba DNS → "Editar zona"):
+   - 4 registros **A** para `spedcontabilidade.com.br`: `185.199.108.153`, `185.199.109.153`,
+     `185.199.110.153`, `185.199.111.153`
+   - 1 registro **CNAME** para `www` apontando para `viniciusbr-star.github.io`
+4. **Ligar o domínio no GitHub**: *Settings → Pages → Custom domain* → `spedcontabilidade.com.br` →
+   Save. Quando aparecer o check verde, marque **Enforce HTTPS**.
+5. **Avisar o Google**: em https://search.google.com/search-console adicione a propriedade
+   do domínio, confirme com o registro TXT que ele pedir (no DNS do registro.br) e, em *Sitemaps*,
+   envie `sitemap.xml`. Depois use *Inspeção de URL → Solicitar indexação* na página inicial.
+6. **Perfil da Empresa no Google** (o que mais traz cliente local): cadastre o escritório em
+   https://business.google.com com o mesmo endereço, telefone e o link do site. É ele que faz a
+   SPED aparecer no mapa quando alguém busca "contabilidade em Osvaldo Cruz".
+
+O Google costuma levar de alguns dias a algumas semanas para começar a mostrar o site.
 
 ## Depoimentos de clientes (Google Forms + Planilha, sem aparecer nada do Google)
 
