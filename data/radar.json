@@ -1,6 +1,15 @@
 {
-  "atualizado_em": "2026-11-23",
+  "atualizado_em": "2026-11-24",
   "itens": [
+    {
+      "data": "2026-11-24",
+      "area": "Federal",
+      "titulo": "Resolução CGSN 196/2026 atualiza regras do Simples Nacional para a Reforma Tributária",
+      "resumo": "O Comitê Gestor do Simples Nacional publicou novas regras para a entrada gradual de IBS e CBS a partir de 2027, com mudanças na apuração e na repartição dos tributos. A receita passa a ser reconhecida, em regra, na emissão da nota, e quem vende a órgãos públicos deve identificar essas receitas nas declarações. Valores do regime de caixa não recebidos até 31/12/2026 entram na apuração de dezembro de 2026.",
+      "quem_e_afetado": "Empresas do Simples Nacional (ME e EPP)",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/comite-gestor-do-simples-nacional-publica-novas-regras-para-o-simples-nacional-e-para-a-transicao-da-reforma-tributaria"
+    },
     {
       "data": "2026-11-23",
       "area": "Federal",
