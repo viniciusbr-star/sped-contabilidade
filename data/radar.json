@@ -1,6 +1,15 @@
 {
-  "atualizado_em": "2026-11-24",
+  "atualizado_em": "2026-11-25",
   "itens": [
+    {
+      "data": "2026-11-24",
+      "area": "Federal",
+      "titulo": "Receita reenviará mensagens da Caixa Postal que não ficaram visíveis entre 9 e 11/11",
+      "resumo": "Uma falha pontual fez com que algumas mensagens enviadas entre 9/11 (11h29) e 11/11 (16h20) gerassem aviso, mas não aparecessem para consulta. A Receita informou que vai reenviar essas mensagens. Vale acompanhar a Caixa Postal do e-CAC nos próximos dias.",
+      "quem_e_afetado": "Contribuintes com Caixa Postal da Receita",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/comunicado-2013-regularizacao-do-envio-de-mensagens-pela-caixa-postal"
+    },
     {
       "data": "2026-11-24",
       "area": "Federal",
