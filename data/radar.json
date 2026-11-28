@@ -1,6 +1,24 @@
 {
-  "atualizado_em": "2026-11-27",
+  "atualizado_em": "2026-11-28",
   "itens": [
+    {
+      "data": "2026-11-27",
+      "area": "Federal",
+      "titulo": "Receita abre consulta pública sobre tributação mínima de altas rendas e de lucros e dividendos",
+      "resumo": "A Receita Federal colocou em consulta pública a minuta de uma instrução normativa que regulamenta a tributação mínima de pessoas físicas com renda anual acima de R$ 600 mil e a tributação de lucros e dividendos distribuídos. Contribuições podem ser enviadas de 27 de novembro a 9 de dezembro de 2026, pelo formulário eletrônico da Receita.",
+      "quem_e_afetado": "Pessoas físicas de alta renda, sócios e empresas que distribuem lucros e dividendos",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-abre-consulta-publica-sobre-regulamentacao-da-tributacao-minima-das-altas-rendas-e-da-tributacao-dos-lucros-e-dividendos-distribuidos"
+    },
+    {
+      "data": "2026-11-27",
+      "area": "Reforma Tributária",
+      "titulo": "Receita e CGIBS esclarecem quais condomínios precisarão emitir documento fiscal",
+      "resumo": "Em regra, o condomínio edilício não é contribuinte de IBS e CBS. A emissão de documento fiscal só será exigida se o condomínio optar pelo regime regular ou se as taxas dos condôminos forem menos de 80% da receita total, e então apenas para essas outras atividades, como aluguel de espaços. Uma NFS-e nacional simplificada está sendo adaptada para esses casos.",
+      "quem_e_afetado": "Condomínios e síndicos",
+      "fonte": "Receita Federal",
+      "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-e-cgibs-esclarecem-emissao-de-documento-fiscal-por-condominios"
+    },
     {
       "data": "2026-11-25",
       "area": "Reforma Tributária",
